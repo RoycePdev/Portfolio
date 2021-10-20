@@ -1,0 +1,28 @@
+.footer-main-container {
+  display: flex;
+  justify-content: center;
+  height: 4rem;
+  width: 100%;
+  background: var(--dark-primary);
+  position: relative;
+  margin-top: -2px;
+}
+.footer-sub-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 10rem;
+  max-width: 500px;
+}
+
+.footer-display {
+  position: absolute;
+  top: 0;
+}
+
+.footer-icon {
+  font-size: 1.5rem;
+  margin: 0 .5rem;
+  cursor: pointer;
+  color: black;
+}

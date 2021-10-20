@@ -1,0 +1,229 @@
+.log-sub-full-container {
+  width: 100%;
+ /* background: var(--night-dark-primary) !important; */
+ /* background: linear-gradient(to right, var(--dark-primary) 0%,var(--dark-primary) 50%,rgb(245, 241, 241) 50%, rgb(245, 241, 241) 100%); */
+ /* background: linear-gradient(to right, var(--night-dark-primary) 0%,var(--night-dark-primary) 50%,var(--gray) 50%, var(--gray) 100%); */
+  height: 55rem;
+
+  /* height was 63 rem */
+
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.log-sub-items-container {
+  position: relative;
+  width: 320px;
+  height: 100%; 
+  /* padding: 2rem; */
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.log-sub-main-header {
+  color: white;
+}
+
+.log-sub-header-paragraph {
+  margin-top: 2.5rem;
+  color: white
+}
+
+.diamond {
+  height: 10rem;
+  width: 10rem;
+  transform: rotate(45deg);
+  border-radius: 8px;
+  background: white;
+  position: absolute;
+}
+
+
+.log-sub-header {
+  position: absolute;
+  transform: rotate(-45deg);
+  font-size: 1.25rem;
+}
+
+.log-sub-paragraph {
+  /* font-weight: bold; */
+  height: 5rem;
+  width: 7.5rem;
+  text-align: center;
+  line-height: 1.25rem;
+  position: absolute;
+  transform: rotate(-45deg);
+  margin: 1rem;
+  top: 2rem;
+  left: 1.5rem;
+  font-size: .75rem;
+  margin-top: 1.5rem;
+}
+
+
+.log-sub-icon {
+  color: var(--dark-highlight);
+  color: black;
+  margin-top: .9rem;
+  font-size: 1.3rem;
+  transform: rotate(180deg);
+}
+
+.log-sub-header-container {
+  text-align: center;
+  display: none;
+  /* justify-content: space-between; */
+  height: 10rem;
+  margin-top: 2.5rem;
+  /* background: green; */
+  
+}
+
+
+.log-sub-header-paragraph {
+  max-width: 55rem;
+  line-height: 1.75rem;
+}
+
+
+
+/* Thumb Shape inside diamond */
+
+.log-sub-icon-triangle {
+  background-color: var(--dark-primary);
+  position: absolute;
+  height: 1.8rem;
+  width: 1.8rem;
+  top: -1px;
+  left: -1px;
+  border-radius: 8px 0px 0 0px;
+}
+.log-sub-icon-rectangle {
+  background: var(--dark-primary);
+  position: absolute;
+  height: 2.5rem;
+  width: .80rem;
+  transform: rotate(45deg);
+  top: -.08rem;
+  left: .75rem;
+}
+.log-sub-icon-circle {
+  position: absolute;
+  display: grid;
+  place-content: center;
+  top: .95rem;
+  left: .5rem;
+  height: 25px;
+  width: 40px;
+  transform: rotate(135deg);
+  background: var(--dark-primary);
+  border-radius: 150px 150px 0 0;
+}
+
+/* end thumb shape inside diamond */
+
+
+/* positioning */
+.log-sub-collaborate {
+  top: 45rem;
+  left: 2.5rem;
+}
+.log-sub-performance {
+  top: 33rem;
+  right: 2.5rem;
+}
+.log-sub-api {
+  top: 21rem;
+  left: 2.5rem;
+}
+.log-sub-compatibility {
+  top: 9rem;
+  right: 2.5rem;
+}
+.log-sub-response{
+  top: -3rem;
+  left: 2.5rem;
+}
+
+
+/* Item positioning inside box */
+
+.response-header {
+  top: 2.5rem;
+  left: 1rem;
+}
+.compatibility-header {
+  top: 2.7rem;
+  left: -.5rem;
+}
+.api-header {
+  top: 2.7rem;
+  left: 2.4rem;
+}
+.performance-header {
+  top: 2.6rem;
+  left: -.3rem;
+}
+.collaborate-header {
+  top: 2.5rem;
+  left: -.2rem;
+}
+
+@media (min-width: 885px)  {
+  .log-sub-full-container {
+    background: linear-gradient(to bottom, var(--night-dark-primary) 0%,var(--night-dark-primary) 50%,var(--gray) 50%,var(--gray) 100%);
+    height: 50rem;
+
+    /* background: green; */
+  }
+  .log-sub-header-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .log-sub-items-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* background: red; */
+  }
+  .log-sub-diamonds-container {
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: -10rem; */
+    /* background: pink; */
+  }
+  .diamond {
+    position: relative;
+  }
+  .log-sub-collaborate {
+    top: 0rem;
+    left: 0rem;
+  }
+  .log-sub-performance {
+    top: 10rem;
+    right: 0rem;
+  }
+  .log-sub-api {
+    top: 0rem;
+    left: 0rem;
+  }
+  .log-sub-compatibility {
+    top: 10rem;
+    right: 0rem;
+  }
+  .log-sub-response{
+    top: 0rem;
+    left: 0rem;
+  }
+  
+}
+

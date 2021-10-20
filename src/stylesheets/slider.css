@@ -1,0 +1,10 @@
+input[type="range"]::-webkit-slider-runnable-track {
+    background-image: url("../images/hue.png");
+    border-radius: 15px;
+  }
+  input[type="range"]::-moz-range-track {
+    background-image: url("../images/hue.png");
+  }
+  input[type="range"]::-ms-track {
+    background-image: url("../images/hue.png");
+  }

@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: var(--font);
+} 
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+
+ :root {
+ --hue: 0;
+ --font: 'Poppins', sans-serif;
+ --light-primary: hsl(var(--hue), 100%, 90%);
+ /* --darker-primary: hsl(var(--hue), 100%, 35%); */
+ --darker-primary: hsl(var(--hue), 100%, 20%);
+ --dark-primary: hsl(var(--hue), 95%, 42%);
+ --blob-primary: hsl(var(--hue), 95%, 70%);
+ --night-dark-primary: hsl(var(--hue), 95%, 22%);
+
+ /* --dark-highlight: hsl(calc(var(--hue) - 180), 100%, 35%); */
+ --dark-highlight: hsl(calc(var(--hue) - 180), 95%, 42%);
+ --night-dark-highlight: hsl(calc(var(--hue) - 180), 95%, 37%);
+ --light-highlight: hsl(calc(var(--hue) - 180), 100%, 90%);
+ --hover-highlight: hsl(calc(var(--hue) - 180), 100%, 80%);
+ --blob-highlight: hsl(calc(var(--hue) - 180), 100%, 70%);
+ --blob-highlight-dark: hsl(calc(var(--hue) - 180), 100%, 30%);
+ --lightest-highlight: hsl(calc(var(--hue) - 180), 100%, 96%);
+ --darkest-highlight: hsl(calc(var(--hue) - 180), 100%, 9%);
+ --gray: rgb(245, 241, 241);
+ --dark-gray: rgb(22, 21, 21);
+ --light: white;
+ --dark: black;
+
+}
+
+.section-title {
+    color: var(--dark-primary);
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+@media (min-width: 600px) {
+    .section-title {
+        font-size: 4rem;
+    }
+}
+

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" 
+width="400" height="190" viewBox="0 0 400 190"><defs>
+<clipPath id="b"><rect width="400" height="190"/>
+</clipPath></defs><g id="a" clip-path="url(#b)">
+<rect width="auto" height="30rem" /><text transform="translate(0 -40)" fill=var(--light-primary) 
+font-size="130" font-family="Gilroy-ExtraBold">
+<tspan x="0" y="195">SKILLS</tspan></text></g></svg>
+
+<!-- fill="#fff" -->
