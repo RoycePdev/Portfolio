@@ -1,5 +1,5 @@
-# Getting Started with Create React App
 
+<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -71,3 +71,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # Portfolio
 # portfoliolanding
 # FrontEndPortfolio
+=======
+>>>>>>> b62bbeaa76476c17de62d1a6cf5acc9f6f25b7b5
