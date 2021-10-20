@@ -29,7 +29,8 @@ export const FeaturedProject = (props) => {
             <h4 className='project-title'>Codepen Clone</h4>
           </div>
           <div className='project-two-container'>
-            <h4 className='project-title'>Github API Search</h4>
+            
+            <a href="https://githubapiproject29294.netlify.app/" className='project-title'>Github API Search</a>
           </div>
         </div>
       </div>
