@@ -11,7 +11,7 @@ export const Footer = (props) => {
           <a href='https://twitter.com/bschaferwebdev' target='_blank'>
             <FaTwitter className='footer-icon footer-tweet' />
           </a>
-          <a href='https://github.com/bschaferwebdev619' target='blank'>
+          <a href='https://github.com/roycepdev' target='blank'>
             <FaGithub className='footer-icon' />
           </a>
           <a
