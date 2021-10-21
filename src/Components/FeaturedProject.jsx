@@ -23,9 +23,6 @@ export const FeaturedProject = (props) => {
           Latest Projects
         </h3>
         <div className='projects-container'>
-          <div className='project-one-container'>
-            <h4 className='project-title'>Codepen Clone</h4>
-          </div>
           <div className='project-two-container'>
             <a
               href='https://githubapiproject29294.netlify.app/'
