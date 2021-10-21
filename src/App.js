@@ -64,7 +64,7 @@ function App() {
             </div>
             <div className='light-dark-container'>
               <button onClick={runLightMode} className='theme theme-light'>
-                Light
+                Ligdht
               </button>
               <button onClick={runDarkMode} className='theme theme-dark'>
                 Dark
