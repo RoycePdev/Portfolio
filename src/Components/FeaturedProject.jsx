@@ -16,8 +16,6 @@ export const FeaturedProject = (props) => {
     },
   }
 
-  // console.log(projectOne.description)
-
   return (
     <div className='featured-project-main-container'>
       <div className='featured-project-items-container'>
@@ -29,8 +27,12 @@ export const FeaturedProject = (props) => {
             <h4 className='project-title'>Codepen Clone</h4>
           </div>
           <div className='project-two-container'>
-            
-            <a href="https://githubapiproject29294.netlify.app/" className='project-title'>Github API Search</a>
+            <a
+              href='https://githubapiproject29294.netlify.app/'
+              className='project-title'
+            >
+              Github API Search
+            </a>
           </div>
         </div>
       </div>

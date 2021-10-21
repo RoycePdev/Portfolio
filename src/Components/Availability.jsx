@@ -1,9 +1,5 @@
-import "../stylesheets/availability.css"
+import '../stylesheets/availability.css'
 
 export const Availability = () => {
-  return (
-    <div>
-      asfsaf
-    </div>
-  )
+  return <div>asfsaf</div>
 }

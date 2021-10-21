@@ -2,19 +2,15 @@ import { Landing } from './Components/Landing.jsx'
 import { FeaturedProject } from './Components/FeaturedProject.jsx'
 import { Services } from './Components/Services.jsx'
 import { Contact } from './Components/Contact.jsx'
-import { Themes } from './Components/Themes.jsx'
 import { Navbar } from './Components/Navbar.jsx'
 import { FrontSub } from './Components/FrontSub.jsx'
 import { LogSub } from './Components/LogSub.jsx'
 import { Footer } from './Components/Footer.jsx'
 import { useState } from 'react'
-import { ToggleComponent } from './Components/ToggleComponent'
-import { ThemeProvider } from 'styled-components'
 import { LightDarkTheme } from './Components/LightDarkTheme'
 import { Slider } from './Components/Slider'
 import { FaTwitter } from 'react-icons/fa'
 import { FaGithub } from 'react-icons/fa'
-import { FaLinkedin } from 'react-icons/fa'
 import { GrLinkedin } from 'react-icons/gr'
 import './stylesheets/themes.css'
 
@@ -49,7 +45,6 @@ function App() {
     setFrSub('white')
     setBlobBk('var(--blob-highlight-dark)')
     setContactBk('var(--night-dark-primary')
-    // setFrSubBk('var(--night-dark-primary)')
     setLightTheme(
       'linear-gradient(to bottom, var(--night-dark-primary) 0%,var(--night-dark-primary) 50%, var(--dark-gray) 50%,var(--dark-gray) 100%)'
     )
@@ -79,17 +74,28 @@ function App() {
           <div className='themes-social-container'>
             <ul className='themes-icon-container'>
               <li className='themes-icon twitter'>
-                <a href="https://twitter.com/bschaferwebdev" target="_blank"><FaTwitter style={{ color: 'blue' }} /></a>
+                <a href='https://twitter.com/bschaferwebdev' target='_blank'>
+                  <FaTwitter style={{ color: 'blue' }} />
+                </a>
               </li>
               <li className='themes-icon github'>
-                <a href="https://github.com/RoycePdev" target="_blank"><FaGithub href="https://twitter.com/bschaferwebdev" style={{ color: fontColor }} /></a>
+                <a href='https://github.com/RoycePdev' target='_blank'>
+                  <FaGithub
+                    href='https://twitter.com/bschaferwebdev'
+                    style={{ color: fontColor }}
+                  />
+                </a>
               </li>
               <li className='themes-icon linkedin'>
                 <div className='linked-in-container'>
-                  <a href="https://www.linkedin.com/in/brian-schafer-b90353221/" target="_blank">
-                  <GrLinkedin
-                    style={{ color: 'darkBlue', background: 'white' }} 
-                  /></a>
+                  <a
+                    href='https://www.linkedin.com/in/brian-schafer-b90353221/'
+                    target='_blank'
+                  >
+                    <GrLinkedin
+                      style={{ color: 'darkBlue', background: 'white' }}
+                    />
+                  </a>
                 </div>
               </li>
             </ul>
@@ -97,14 +103,26 @@ function App() {
         </div>
       </div>
       <Navbar fc={theme} />
-      <Landing blob={blobBk} fc= {fontColor} bg={theme} />
-      <FrontSub cBk={contactBk} fs={frSub} bg={theme} nbg={frSubBk} fc={fontColor} />
+      <Landing blob={blobBk} fc={fontColor} bg={theme} />
+      <FrontSub
+        cBk={contactBk}
+        fs={frSub}
+        bg={theme}
+        nbg={frSubBk}
+        fc={fontColor}
+      />
       <LightDarkTheme bg={theme} fc={fontColor}>
         <FeaturedProject />
       </LightDarkTheme>
       <LogSub cBk={contactBk} lt={lightTheme} bg={theme} fc={fontColor} />
       <Services bg={theme} fc={fontColor} />
-      <Contact bg={frSubBk} cBk={contactBk} dbg={theme} lbg={lightBg} fc={fontColor} />
+      <Contact
+        bg={frSubBk}
+        cBk={contactBk}
+        dbg={theme}
+        lbg={lightBg}
+        fc={fontColor}
+      />
       <Footer bg={contactBk} />
     </>
   )

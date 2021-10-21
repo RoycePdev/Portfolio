@@ -1,10 +1,6 @@
 import React, { useRef } from 'react'
 import '../stylesheets/landing.css'
-import { FaGithubSquare } from 'react-icons/fa'
-import { FaReact } from 'react-icons/fa'
 import { BiRefresh } from 'react-icons/bi'
-import { Themes } from '../Components/Themes.jsx'
-import { LightDarkTheme } from '../Components/LightDarkTheme.jsx'
 import { useState, useEffect } from 'react'
 
 import '../Components/Themes.jsx'
@@ -34,7 +30,6 @@ export const Landing = (props) => {
     setSpin(true)
   }
 
-
   const buttonAction = () => {
     spinner()
     refresh()
@@ -48,7 +43,8 @@ export const Landing = (props) => {
         <div className='landing-title-container'>
           <div className='landing-header-sub-container'>
             <h1 className='landing-header'>
-              <span className="landing-first-name">Brian </span> <br /> <span className="landing-last-name">Schafer</span>
+              <span className='landing-first-name'>Brian </span> <br />{' '}
+              <span className='landing-last-name'>Schafer</span>
             </h1>
             <h3 className='landing-subheader'>React Engineer</h3>
           </div>
@@ -79,7 +75,9 @@ export const Landing = (props) => {
           </div>
         </div>
         <div className='github-container'>
-          <a href ="https://github.com/bschaferwebdev619" target="_blank"><button className='landing-github-button'>GitHub</button></a>
+          <a href='https://github.com/bschaferwebdev619' target='_blank'>
+            <button className='landing-github-button'>GitHub</button>
+          </a>
           <div className='eyeballs'>👀</div>
         </div>
       </div>
