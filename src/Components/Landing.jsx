@@ -46,7 +46,7 @@ export const Landing = (props) => {
               <span className='landing-first-name'>Brian </span> <br />{' '}
               <span className='landing-last-name'>Schafer</span>
             </h1>
-            <h3 className='landing-subheader'>React Engineer</h3>
+            <h3 className='landing-subheader'>Front-End Engineer (React)</h3>
           </div>
           <div className='blob-container'>
             <svg
