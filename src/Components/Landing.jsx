@@ -75,7 +75,7 @@ export const Landing = (props) => {
           </div>
         </div>
         <div className='github-container'>
-          <a href='https://github.com/bschaferwebdev619' target='_blank'>
+          <a href='https://github.com/roycepdev' target='_blank'>
             <button className='landing-github-button'>GitHub</button>
           </a>
           <div className='eyeballs'>👀</div>
