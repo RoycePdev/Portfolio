@@ -22,16 +22,6 @@ export const FeaturedProject = (props) => {
         <h3 className='featured-project-header section-title'>
           Latest Projects
         </h3>
-        <div className='projects-container'>
-          <div className='project-two-container'>
-            <a
-              href='https://githubapiproject29294.netlify.app/'
-              className='project-title'
-            >
-              Github API Search
-            </a>
-          </div>
-        </div>
       </div>
     </div>
   )
