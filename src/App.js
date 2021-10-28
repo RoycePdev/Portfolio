@@ -19,7 +19,7 @@ function App() {
   const [fontColor, setFontColor] = useState('black')
   const [lightBg, setlightBg] = useState('white')
   const [frSub, setFrSub] = useState('var(--light-primary)')
-  const [frSubBk, setFrSubBk] = useState('var(--night-dark-primary)')
+  // const [frSubBk, setFrSubBk] = useState('var(--night-dark-primary)')
   const [contactBk, setContactBk] = useState('var(--dark-primary)')
   const [blobBk, setBlobBk] = useState('var(--blob-highlight)')
   const [lightTheme, setLightTheme] = useState(
@@ -74,12 +74,12 @@ function App() {
           <div className='themes-social-container'>
             <ul className='themes-icon-container'>
               <li className='themes-icon twitter'>
-                <a href='https://twitter.com/bschaferwebdev' target='_blank'>
+                <a href='https://twitter.com/bschaferwebdev' target='_blank' rel="noreferrer">
                   <FaTwitter style={{ color: 'blue' }} />
                 </a>
               </li>
               <li className='themes-icon github'>
-                <a href='https://github.com/RoycePdev' target='_blank'>
+                <a href='https://github.com/RoycePdev' target='_blank' rel="noreferrer">
                   <FaGithub
                     href='https://twitter.com/bschaferwebdev'
                     style={{ color: fontColor }}
@@ -90,7 +90,7 @@ function App() {
                 <div className='linked-in-container'>
                   <a
                     href='https://www.linkedin.com/in/brian-schafer-b90353221/'
-                    target='_blank'
+                    target='_blank' rel="noreferrer"
                   >
                     <GrLinkedin
                       style={{ color: 'darkBlue', background: 'white' }}
@@ -108,7 +108,7 @@ function App() {
         cBk={contactBk}
         fs={frSub}
         bg={theme}
-        nbg={frSubBk}
+        // nbg={frSubBk}
         fc={fontColor}
       />
       <LightDarkTheme bg={theme} fc={fontColor}>
@@ -117,7 +117,7 @@ function App() {
       <LogSub cBk={contactBk} lt={lightTheme} bg={theme} fc={fontColor} />
       <Services bg={theme} fc={fontColor} />
       <Contact
-        bg={frSubBk}
+        // bg={frSubBk}
         cBk={contactBk}
         dbg={theme}
         lbg={lightBg}

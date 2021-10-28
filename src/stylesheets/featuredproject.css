@@ -35,6 +35,12 @@
     list-style-type: none;
 }
 
+.yay {
+    height: 10rem;
+    width: 10rem;
+    background: red;
+}
+
 
 .featured-project-paragraph {
     /* background: green; */

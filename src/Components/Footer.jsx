@@ -8,10 +8,10 @@ export const Footer = (props) => {
     <div className='footer-main-container' style={{ background: props.bg }}>
       <div className='footer-sub-container'>
         <div className='footer-icon-container'>
-          <a href='https://twitter.com/bschaferwebdev' target='_blank'>
+          <a href='https://twitter.com/bschaferwebdev' target='_blank' rel="noreferrer">
             <FaTwitter className='footer-icon footer-tweet' />
           </a>
-          <a href='https://github.com/roycepdev' target='blank'>
+          <a href='https://github.com/roycepdev' target='_blank' rel="noreferrer">
             <FaGithub className='footer-icon' />
           </a>
           <a

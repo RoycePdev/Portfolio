@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import '../stylesheets/landing.css'
 import { BiRefresh } from 'react-icons/bi'
 import { useState, useEffect } from 'react'
@@ -9,15 +9,11 @@ export const Landing = (props) => {
   const [quote, setQuote] = useState('quote')
   const [spin, setSpin] = useState(false)
 
-  useEffect(async () => {
-    const response = await fetch('https://type.fit/api/quotes')
-    const data = await response.json()
-    const randomQuote = data[Math.floor(Math.random() * data.length)]
-    const item = randomQuote
-    setQuote(item)
+  useEffect(() => {
+    getQuote()
   }, [])
 
-  const refresh = () => {
+  const getQuote = () => {
     fetch('https://type.fit/api/quotes')
       .then((response) => response.json())
       .then((data) => {
@@ -32,9 +28,8 @@ export const Landing = (props) => {
 
   const buttonAction = () => {
     spinner()
-    refresh()
+    getQuote()
     setTimeout(() => setSpin(false), 1000)
-    console.log(spin)
   }
 
   return (
@@ -75,7 +70,11 @@ export const Landing = (props) => {
           </div>
         </div>
         <div className='github-container'>
-          <a href='https://github.com/roycepdev' target='_blank'>
+          <a
+            href='https://github.com/roycepdev'
+            target='_blank'
+            rel='noreferrer'
+          >
             <button className='landing-github-button'>GitHub</button>
           </a>
           <div className='eyeballs'>👀</div>

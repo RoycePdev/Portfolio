@@ -25,15 +25,15 @@ export const Services = (props) => {
         </ul>
       </div>
       <div className='services-items-container'>
-        <Html className='service-svg html-f' />
-        <Css className='service-svg css-i' />
-        <Sass className='service-svg' />
+        <Html className='service-svg html-f' alt="html" />
+        <Css className='service-svg css-i' alt="css" />
+        <Sass className='service-svg' alt="Sass" />
         <Javascript className='service-svg js' />
-        <img className='service-svg' src={Reactp} />
-        <Redux className='service-svg js' />
-        <Node className='service-svg js' />
-        <Express className='service-svg js' style={{ background: 'white' }} />
-        <Typescript className='service-svg js' />
+        <img className='service-svg' src={Reactp} alt="react" />
+        <Redux className='service-svg js' alt="redux" />
+        <Node className='service-svg js' alt="Node.js" />
+        <Express className='service-svg js' style={{ background: 'white' }} alt="express" />
+        <Typescript className='service-svg js' alt="Typescript" />
       </div>
     </div>
   )
