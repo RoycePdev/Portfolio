@@ -30,7 +30,8 @@ export const FeaturedProject = (props) => {
         <h3 className='section-title featured-project-header'>
           Recent Projects
         </h3>
-        <div className='featured-project-boxes-container'>
+        This section is under construction. Projets are listed on <a href="https://github.com/roycepdev">Github</a>
+        {/* <div className='featured-project-boxes-container'>
           {projects.map((project) => {
             return (
               <Project
@@ -40,7 +41,7 @@ export const FeaturedProject = (props) => {
               />
             )
           })}
-        </div>
+        </div> */}
       </div>
     </div>
   )
