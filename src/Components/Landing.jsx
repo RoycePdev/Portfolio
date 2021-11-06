@@ -38,10 +38,10 @@ export const Landing = (props) => {
         <div className='landing-title-container'>
           <div className='landing-header-sub-container'>
             <h1 className='landing-header'>
-              <span className='landing-first-name'>Brian </span> <br />{' '}
-              <span className='landing-last-name'>Schafer</span>
+              <span className='landing-first-name'> RP Web Dev </span>
+              {/* <span className='landing-last-name'></span> */}
             </h1>
-            <h3 className='landing-subheader'>Front-End Engineer (React)</h3>
+            <h3 className='landing-subheader'>Delivering lightweight, UI friendly applications with React and Next.JS</h3>
           </div>
           <div className='blob-container'>
             <svg

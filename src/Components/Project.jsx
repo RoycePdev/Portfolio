@@ -1,9 +1,15 @@
 import React from 'react'
+import '../stylesheets/featuredproject.css'
 
-export const Project = () => {
+
+export const Project = (props) => {
+
+  const { name, description } = props
+
   return (
-    <div>
-      
+    <div className="project-card">
+      <div className="project-name">{name}</div>
+      <div className="project-description">{description}</div>
     </div>
   )
 }
