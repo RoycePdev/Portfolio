@@ -7,21 +7,12 @@ export const FeaturedProject = (props) => {
   const projects = [
     {
       name: 'project One',
-      title: 'Project space',
+      title: 'SDFadeShack Barbershop',
       description:
-        'This is a clone of the website codepen done with the react library',
+        'A website I developed using React for a barbershop where potential customers can learn more about the staff, services, contact info and even book appointments',
+        link: 'https://nostalgic-beaver-9e8a63.netlify.app'
     },
-    {
-      name: 'project Two',
-      title: 'Earth clone',
-      description:
-        'This is a tool that uses the Github API to search Github users',
-    },
-    {
-      name: 'project Three',
-      title: 'my THird Project',
-      description: 'description of my third project',
-    },
+
   ]
 
   return (
@@ -30,18 +21,19 @@ export const FeaturedProject = (props) => {
         <h3 className='section-title featured-project-header'>
           Recent Projects
         </h3>
-        This section is under construction. Projets are listed on <a href="https://github.com/roycepdev">Github</a>
-        {/* <div className='featured-project-boxes-container'>
+        <div className='featured-project-boxes-container'>
           {projects.map((project) => {
             return (
+              <a href={project.link}>
               <Project
                 key={project.name}
                 name={project.title}
                 description={project.description}
-              />
+              ></Project>
+              </a>
             )
           })}
-        </div> */}
+        </div>
       </div>
     </div>
   )
