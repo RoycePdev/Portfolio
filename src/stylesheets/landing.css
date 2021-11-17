@@ -5,12 +5,11 @@
   flex-direction: row;
   width: 100%;
   padding-top: 2rem;
+  padding-bottom: 4rem;
 }
 
 .landing-sub-container {
-  /* background: purple; */
   display: flex;
-
   width: 100%;
   padding-top: 1rem;
   padding-left: 1rem;
@@ -52,8 +51,6 @@
 .github-container {
   display: flex;
   align-items: center;
-  /* height: 5rem; */
-  /* margin-top: -2.5rem; */
   padding-top: 1rem;
 }
 
